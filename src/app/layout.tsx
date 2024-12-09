@@ -1,8 +1,30 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Poppins, Josefin_Sans, Lato } from "next/font/google";
+import TopHeader from "../Components/TopHeader";
+import Header from "../Components/Navbar";
+import Footer from "../Components/Footer";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-poppins",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
+
+const josefin = Josefin_Sans({
+  style: "normal",
+  subsets: ["latin"],
+  variable: "--font-josefin",
+});
+
+const lato = Lato({
+  style: "normal",
+  weight: ["100", "300", "400", "700", "900"],
+  subsets: ["latin"],
+  variable: "--font-lato",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,8 +37,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html
+      lang="en"
+      className={`${poppins.variable} ${josefin.variable} ${lato.variable}`}
+    >
+      <body>
+        {/* Top Header */}
+        <TopHeader />
+        
+        {/* Main Header */}
+        <Header />
+
+        {/* Main Content */}
+        <main className="min-h-screen">{children}</main>
+
+        {/* Footer */}
+        <Footer />
+      </body>
     </html>
   );
 }
