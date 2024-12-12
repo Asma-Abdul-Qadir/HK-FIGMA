@@ -14,7 +14,6 @@ import LatestBlog from "../Components/LatestBlog";
 export default function Home() {
   return (
     <div>
-      
 
 <HeroSection/>
 <FeatureProducts/>
@@ -25,8 +24,8 @@ export default function Home() {
 <TopCategories/>
 <Newsletter/>
 <BrandsLogo/>
-
 <LatestBlog/>
+
 
     </div>
    

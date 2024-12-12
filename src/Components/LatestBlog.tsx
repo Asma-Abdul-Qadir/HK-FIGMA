@@ -1,35 +1,35 @@
 'use client';
 import Image from 'next/image';
-import Link from "next/link";
+import Link from 'next/link';
 
 function BlogSection() {
   const blogs = [
     {
       id: 1,
-      img: "/images/blog1.png",
-      author: "Saber Ali",
-      date: "21 August, 2020",
-      title: "Top Essential Trends in 2020",
-      description: "More off this less hello samlande lied much over tightly circa horse taped mightly.",
-      titleColor: "#151875", 
+      img: '/images/blog1.png',
+      author: 'Saber Ali',
+      date: '21 August, 2020',
+      title: 'Top Essential Trends in 2020',
+      description: 'More off this less hello samlande lied much over tightly circa horse taped mightly.',
+      titleColor: '#151875',
     },
     {
       id: 2,
-      img: "/images/blog2.png",
-      author: "Surfauxion",
-      date: "21 August, 2020",
-      title: "Top Essential Trends in 2020",
-      description: "More off this less hello samlande lied much over tightly circa horse taped mightly.",
-      titleColor: "#FB2E86",
+      img: '/images/blog2.png',
+      author: 'Surfauxion',
+      date: '21 August, 2020',
+      title: 'Top Essential Trends in 2020',
+      description: 'More off this less hello samlande lied much over tightly circa horse taped mightly.',
+      titleColor: '#FB2E86',
     },
     {
       id: 3,
-      img: "/images/blog3.png",
-      author: "Saber Ali",
-      date: "21 August, 2020",
-      title: "Top Essential Trends in 2020",
-      description: "More off this less hello samlande lied much over tightly circa horse taped mightly.",
-      titleColor: "#151875", 
+      img: '/images/blog3.png',
+      author: 'Saber Ali',
+      date: '21 August, 2020',
+      title: 'Top Essential Trends in 2020',
+      description: 'More off this less hello samlande lied much over tightly circa horse taped mightly.',
+      titleColor: '#151875',
     },
   ];
 
@@ -52,8 +52,8 @@ function BlogSection() {
               <Image
                 src={blog.img}
                 alt={blog.title}
-                layout="fill"
-                objectFit="cover"
+                fill
+                style={{ objectFit: 'cover' }}
                 className="rounded-lg"
               />
             </div>
@@ -77,13 +77,12 @@ function BlogSection() {
             <p className="text-gray-600 text-sm sm:text-base">{blog.description}</p>
 
             {/* Read More */}
-            <Link href="/blog">
-              <button
-                className="underline text-sm font-medium mt-4"
-                style={{ color: blog.titleColor }}
-              >
-                Read More
-              </button>
+            <Link
+              href="/blog"
+              className="underline text-sm font-medium mt-4"
+              style={{ color: blog.titleColor }}
+            >
+              Read More
             </Link>
           </div>
         ))}
