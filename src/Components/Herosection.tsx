@@ -9,8 +9,8 @@ const slides = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
     buttonText: "Shop Now",
-    chairImage: "/images/chair.png", // Corrected path
-    lampImage: "/images/lamp.png",   // Corrected path
+    chairImage: "/images/chair.png",
+    lampImage: "/images/lamp.png",   
   },
   {
     title: "Modern Chair Designs for Your Home",
@@ -53,8 +53,8 @@ function HeroSection() {
           <Image
             src={current.lampImage}
             alt="Lamp"
-            width={387} // Fixed size for lamp
-            height={387} // Fixed size for lamp
+            width={387} 
+            height={387} 
             className="object-contain md:w-full md:h-auto"
           />
         </div>

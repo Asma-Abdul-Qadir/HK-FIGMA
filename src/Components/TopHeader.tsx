@@ -1,7 +1,7 @@
 'use client';
 
 import { FaEnvelope, FaPhoneAlt, FaUser, FaHeart, FaShoppingCart } from 'react-icons/fa'; // Import necessary icons
-import { useState } from 'react'; // To manage dropdown state
+import { useState } from 'react';
 
 const TopBar = () => {
   const [languageDropdown, setLanguageDropdown] = useState(false);

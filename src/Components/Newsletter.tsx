@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 function Newsletter() {
   return (
-    <div className="w-full bg-white mt-8"> {/* Added mt-8 for top margin */}
+    <div className="w-full bg-white mt-8">
       {/* Newsletter Section */}
       <div
         className="relative w-full bg-cover bg-center h-[462px] flex items-center justify-center"

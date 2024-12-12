@@ -1,4 +1,5 @@
 "use client";
+/*eslint-disable @typescript-eslint/no-unused-vars*/
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faHeart, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import Link from "next/link";

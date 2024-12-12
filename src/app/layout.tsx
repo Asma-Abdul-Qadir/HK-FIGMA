@@ -1,3 +1,4 @@
+/*eslint-disable @typescript-eslint/no-unused-vars*/
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import type { Metadata } from "next";
 import { Poppins, Josefin_Sans, Lato } from "next/font/google";
