@@ -3,9 +3,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import type { Metadata } from "next";
 import { Poppins, Josefin_Sans, Lato } from "next/font/google";
 import TopHeader from "../Components/TopHeader";
-import Header from "../Components/Navbar";
+import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import "./globals.css";
+
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -47,7 +48,7 @@ export default function RootLayout({
         <TopHeader />
         
         {/* Main Header */}
-        <Header />
+        <Navbar />
 
         {/* Main Content */}
         <main className="min-h-screen">{children}</main>
