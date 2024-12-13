@@ -52,8 +52,7 @@ function BlogSection() {
               <Image
                 src={blog.img}
                 alt={blog.title}
-                fill
-                style={{ objectFit: 'cover' }}
+                layout="fill" // Use layout="fill"
                 className="rounded-lg"
               />
             </div>
